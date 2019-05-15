@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        docker build -t musaib/nodeapp .
+        app = docker.build("musaib/nodeapp")
     }
 
     stage('Test image') {
