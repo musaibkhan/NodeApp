@@ -3,7 +3,7 @@ FROM node:7-onbuild
 
 # set maintainer
 LABEL maintainer "mk8930g@gmail.com"
-
+docker build -t musaib/nodeapp .
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
